@@ -1,11 +1,7 @@
 import { MenuIcon, ShirtIcon } from "lucide-react"
 import Link from "next/link"
 import { SignedOut, SignInButton } from "@clerk/nextjs"
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuLink,
-} from "@/components/ui/navigation-menu"
+import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetHeader } from "@/components/ui/sheet"
 import { Logo } from "@/components/logo"
