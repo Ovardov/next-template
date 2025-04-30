@@ -1,14 +1,15 @@
 "use server"
 import Stripe from "stripe"
+import { SubscriptionPlans } from "@/app/(main)/dashboard/billing/types"
 
 export const createUserCheckoutSession = async ({
   user,
   mode,
-  priceId,
+  product,
 }: {
   user: { id: string; email: string; stripeCustomerId?: string }
   mode: Stripe.Checkout.SessionCreateParams.Mode
-  priceId: string
+  product: { priceId: string; subscriptionPlan: SubscriptionPlans }
 }): Promise<string | null> => {
   // To Do -> Put the success payment page
   const returnUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/dashboard`
@@ -29,10 +30,13 @@ export const createUserCheckoutSession = async ({
     },
     line_items: [
       {
-        price: priceId,
+        price: product.priceId,
         quantity: 1,
       },
     ],
+    metadata: {
+      subscription_plan: product.subscriptionPlan,
+    },
     success_url: returnUrl + "?success=true",
     cancel_url: returnUrl,
   })

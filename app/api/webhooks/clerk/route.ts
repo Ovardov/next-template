@@ -18,8 +18,8 @@ export const POST = async (req: NextRequest) => {
     const supabase = await createSupabaseClientSsrWithServiceKey()
     const { error } = await supabase.from("users").insert({
       user_id: clerkUser.id,
-      email: clerkUser.email_addresses[0]?.email_address,
-      plan: SubscriptionPlans.Free,
+      stripe_customer_id: null,
+      subscription_plan: SubscriptionPlans.Free,
     })
 
     if (error) {
