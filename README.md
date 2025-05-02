@@ -19,7 +19,6 @@ A modern and extensible Next.js 15 template designed for building full-stack Saa
 I'm building this template as part of my **“Building a SaaS” livestream series**.
 
 📅 **Day 1 Episode:** [Watch here](https://www.youtube.com/live/iAKcWSqYH9A?si=LTE7_F6ndO_bCQIh)  
-> _(Replace `#` with your actual YouTube or Twitch link)_
 
 More episodes dropping soon — follow along to learn and build with me!
 
