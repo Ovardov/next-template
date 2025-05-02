@@ -27,7 +27,7 @@ More episodes dropping soon — follow along to learn and build with me!
 ## 🚀 Getting Started
 
 ```bash
-git clone [https://github.com/your-username/next-template.git](https://github.com/Ovardov/next-template.git)
+git clone https://github.com/Ovardov/next-template.git
 bun install
 bun run dev
 ```
