@@ -32,7 +32,7 @@ bun install
 bun run dev
 ```
 
-## 🌟 Built with this template
+## 🧪 Built with this template
 
 These SaaS products were created using this starter:
 
