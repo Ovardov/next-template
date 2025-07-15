@@ -31,3 +31,12 @@ git clone https://github.com/Ovardov/next-template.git
 bun install
 bun run dev
 ```
+
+## 🌟 Built with this template
+
+These SaaS products were created using this starter:
+
+- 🔗 [Profit Trail](https://profit-trail.com)  
+- 🔗 [Saassy Board](https://saassy-board.com)
+
+---
